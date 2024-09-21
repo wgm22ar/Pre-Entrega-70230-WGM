@@ -51,7 +51,7 @@ router.post("/", async (req, res) => {
         res.status(500).send("Error del servidor");
     }})
 
-    router.put("/:pid", async (req, res) => {
+    router.put("/", async (req, res) => {
         const productoActualizado=req.body
         try{
         await manager.updateProduct(productoActualizado);
@@ -61,7 +61,7 @@ router.post("/", async (req, res) => {
         res.status(404).send("El producto no existe")
     }})
 
-    router.delete("/pid:",async (req,res)=>{
+    router.delete("/:",async (req,res)=>{
         const productoEliminado=req.body
         try{
             await manager.deleteProduct(productoEliminado)
