@@ -1,8 +1,8 @@
 [
   {
     "id": 1,
-    "title": "Arroz",
-    "description": "Marolio",
+    "title": "Termo 1L",
+    "description": "Stanley",
     "price": 20,
     "img": "sin imagen",
     "code": "abc555",
@@ -10,8 +10,8 @@
   },
   {
     "id": 2,
-    "title": "Azúcar",
-    "description": "Ledesma",
+    "title": "Yerba",
+    "description": "Playadito",
     "price": 150,
     "img": "sin imagen",
     "code": "def456",
@@ -19,8 +19,8 @@
   },
   {
     "id": 3,
-    "title": "Harina",
-    "description": "Blanco",
+    "title": "Bombilla Alpaca",
+    "description": "Plateria",
     "price": 180,
     "img": "sin imagen",
     "code": "ghi789",
@@ -28,8 +28,8 @@
   },
   {
     "id": 4,
-    "title": "Aceite",
-    "description": "Saboroso",
+    "title": "Yerba Importada",
+    "description": "Canaria",
     "price": 350,
     "img": "sin imagen",
     "code": "jkl012",
@@ -37,8 +37,8 @@
   },
   {
     "id": 5,
-    "title": "Leche",
-    "description": "La Serenísima",
+    "title": "Gin",
+    "description": "Gordons",
     "price": 120,
     "img": "sin imagen",
     "code": "mno345",
@@ -46,8 +46,8 @@
   },
   {
     "id": 6,
-    "title": "Galletitas",
-    "description": "Tend to be sweet",
+    "title": "Whiskey",
+    "description": "Johnie Walker",
     "price": 250,
     "img": "sin imagen",
     "code": "pqr678",
@@ -55,8 +55,8 @@
   },
   {
     "id": 7,
-    "title": "Tomates",
-    "description": "En bolsa",
+    "title": "Ron",
+    "description": "El Conquistador",
     "price": 90,
     "img": "sin imagen",
     "code": "stu901",
@@ -64,8 +64,8 @@
   },
   {
     "id": 8,
-    "title": "Cereal",
-    "description": "Nestlé",
+    "title": "Tequila",
+    "description": "Cuervo",
     "price": 400,
     "img": "sin imagen",
     "code": "vwx234",
@@ -73,8 +73,8 @@
   },
   {
     "id": 9,
-    "title": "Pasta",
-    "description": "Migliore",
+    "title": "Fernet",
+    "description": "Branca",
     "price": 170,
     "img": "sin imagen",
     "code": "yz1234",
@@ -89,26 +89,9 @@
     "code": "abc567",
     "stock": 33
   },
+  
   {
     "id": 11,
-    "title": "Helado",
-    "description": "De Menta granizada",
-    "price": 5000,
-    "img": "sin imagen",
-    "code": "aaa558",
-    "stock": 300
-  },
-  {
-    "id": 12,
-    "title": "Fideos",
-    "description": "Marolio",
-    "price": 1000,
-    "img": "sin imagen",
-    "code": "aaa559",
-    "stock": 300
-  },
-  {
-    "id": 13,
     "title": "Gaseosa",
     "description": "Coca Cola",
     "price": 2800,
