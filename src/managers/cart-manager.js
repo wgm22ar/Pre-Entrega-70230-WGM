@@ -47,11 +47,34 @@ class CartManager {
     }
 
     async getCarritoById(carritoId) {
+        try {
+            const carritoBuscado = this.carts.find(carrito => carrito.id === carritoId);
+
+            if(!carritoBuscado) {
+                throw new Error("No existe un carrito con ese id"); 
+            }
+
+            return carritoBuscado; 
+        } catch (error) {
+            throw new Error("Error al obtener los carritos"); 
+        }
         
     }
 
     async agregarProductoAlCarrito(carritoId, productoId, quantity = 1) {
-      
+      const carrito = await this.getCarritoById(carritoId); 
+      const existeProducto = carrito.products.find(producto => producto.product === productoId );
+        //De esta forma chequeo si el producto que estoy recibiendo para agregar al carrito ya esta presente en el. Si existe, modifico la cantidad, si no existe lo agrego. 
+
+        if(existeProducto) {
+            existeProducto.quantity += quantity; 
+        } else {
+            carrito.products.push({product: productoId, quantity}); 
+        }
+
+        //Como aca yo modifique el carrito, tengo que actualizar el archivo. 
+        await this.guardarCarritos(); 
+        return carrito; 
     }
 
 }
