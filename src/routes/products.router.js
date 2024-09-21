@@ -49,13 +49,27 @@ router.post("/", async (req, res) => {
         res.status(201).send("Producto agregado exitosamente");
     } catch (error) {
         res.status(500).send("Error del servidor");
-    }
-})
+    }})
 
+    router.put("/:pid", async (req, res) => {
+        const productoActualizado=req.body
+        try{
+        await manager.updateProduct(productoActualizado);
+        res.status(201).send("Producto Actualizado correctamente")
 
+    }catch (error) {
+        res.status(404).send("El producto no existe")
+    }})
 
+    router.delete("/pid:",async (req,res)=>{
+        const productoEliminado=req.body
+        try{
+            await manager.deleteProduct(productoEliminado)
+            res.status(201).send("El producto Eliminado")
+        } catch (error){
+            res.status(500).send("Error al eliminar el archivo")
+        
 
-
-
+    }})
 
 module.exports = router;
